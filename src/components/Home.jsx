@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import pdf from "../pdf/resume.pdf";
-import hero from "./data/hero.json";
 import Typed from "typed.js";
 
 const Home = () => {
   const typedRef = useRef(null);
+
   useEffect(() => {
     const options = {
       strings: [
@@ -17,7 +16,6 @@ const Home = () => {
       backSpeed: 50,
       loop: true,
     };
-    
 
     const typed = new Typed(typedRef.current, options);
 
@@ -27,26 +25,34 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="container home" id="home">
-        <div className="left" data-aos="fade-up-right" data-aos-duration="1000">
-          <h1 ref={typedRef}></h1>
+    <div className="container home" id="home">
+      <div className="left" data-aos="fade-up-right" data-aos-duration="1000">
+        <h1 ref={typedRef}></h1>
 
-          <a
-            href={pdf}
-            download="Resume.pdf"
-            className="btn btn-outline-warning my-3"
-          >
-            Download Resume
-          </a>
-        </div>
-        <div className="right">
-          <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
-            <img src="./src/profile/image.jpeg" alt="" />
-          </div>
+        {/* Link to download the resume PDF */}
+        <a
+          href="/pdf/resume.pdf"
+          download="Ahtasham Pervaiz CV.pdf"
+          className="btn btn-outline-warning my-3"
+        >
+          Download Resume
+        </a>
+      </div>
+
+      <div className="right">
+        <div
+          className="img"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
+          {/* Profile Image with relative path */}
+          <img
+            src="../src/profile/image.jpeg" // Relative path to the profile image
+            alt="Profile"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
