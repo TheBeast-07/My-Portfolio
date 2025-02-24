@@ -15,6 +15,10 @@ const Navbar = () => {
           <a href="#experience" className="nav_items">
             Experience
           </a>
+          <a href="#certificate" className="nav_items">
+              Certifications
+              </a>
+
           <a href="#skills" className="nav_items">
             Skills
           </a>

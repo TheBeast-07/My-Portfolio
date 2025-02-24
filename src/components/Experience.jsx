@@ -4,18 +4,30 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      imageSrc: "pny.png",
-      role: "Frontend Developer",
-      startDate: "2023",
-     
-      location: "PNY Institute, Rwp",
+      imageSrc: "react.png",
+      role: "Full Stack Developer",
+      startDate: "10-10-2024",
+      endDate:"1-10-2025",
+      
+      location: "Structures Limited , Hostel City",
       experiences: [
-        "Built the frontend of websites like KFC and Arsha.",
-        "Developed games like Tic Tac Toe, Rock Paper Scissors, BMI, and Guess a Number using JavaScript."
+        "Developed and maintained dynamic web applications using the MERN stack (MongoDB, Express, React, Node.js) to provide high-quality and scalable solutions.Designed and implemented RESTful APIs to support frontend functionality, ensuring smooth integration between the client-side and server-side components."
       ]
     },
     {
       id: 2,
+      imageSrc: "pny.png",
+      role: "IT Assistant",
+      startDate: "10-9-2024,",
+      endDate:"8-10-2024",
+     
+      location: "SINA , I-8 Islamabad",
+      experiences: [
+       "Proficiently used MS Office to prepare reports, presentations, and documentation, enhancing overall productivity.Led and supported Digital Marketing initiatives, including content creation, social media campaigns, and performance analysis to drive online engagement."
+      ]
+    },
+    {
+      id: 3,
       imageSrc: "react.png",
       role: "Full Stack Developer",
       startDate: "2023",
@@ -25,7 +37,8 @@ const Experience = () => {
         "Created a photo portfolio website using React.",
         "Developed a user registration and login system for WhatsApp using the MERN stack."
       ]
-    }
+    },
+    
   ];
 
   return (

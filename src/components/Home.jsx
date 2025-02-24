@@ -47,7 +47,7 @@ const Home = () => {
         >
           {/* Profile Image with relative path */}
           <img
-            src="assets/hero/Img.jpeg" // Relative path to the profile image
+            src="assets/hero/Img.png" // Relative path to the profile image
             alt="Profile"
           />
         </div>
