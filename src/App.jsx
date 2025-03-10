@@ -9,30 +9,26 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 import Certificate from "./components/Certificate";
 
-const App =() =>{
-  return(
-    <h1>hello world</h1>
+
+const App = () => {
+ useEffect(() => {
+  Aos.init();
+  
+ }, [])
+ 
+  return (
+    <>
+      <Navbar />
+      <div className="container">
+        <Home />
+        <Experience />
+        <Certificate/>
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    </>
   );
 };
-// const App = () => {
-//  useEffect(() => {
-//   Aos.init();
-  
-//  }, [])
- 
-//   return (
-//     <>
-//       <Navbar />
-//       <div className="container">
-//         <Home />
-//         <Experience />
-//         <Certificate/>
-//         <Skills />
-//         <Projects />
-//         <Contact />
-//       </div>
-//     </>
-//   );
-// };
 
 export default App;
